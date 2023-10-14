@@ -1,0 +1,49 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%; /* Adjust the width as needed */
+  height: 600px; /* Adjust the height as needed */
+  border: 1px solid #333; /* Border color for the phone */
+  background-color: #9bb9d6; /* Background color for the phone */
+
+  .calculator-display {
+    background-color: #0074d9; /* Royal blue display background */
+    color: white;
+    font-size: 2rem; /* Adjust the font size as needed */
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+  }
+
+  .calculator-keypad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+
+    .keypad-row {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 1vw;
+
+      button {
+        background-color: #001f3f; /* Navy blue keypad background */
+        color: white;
+        font-size: 15rem; /* Adjust the font size as needed */
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        margin: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #003366; /* Darker blue on hover */
+        }
+      }
+    }
+  }
+}
